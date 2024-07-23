@@ -1,7 +1,9 @@
-repository-name
-# Repository Name
+learning-terraform-input-variables
+# Learning Terraform - Input Variables
 
-Based on "ABC" at https://www.abc.com/
+Based on "Learning Terraform" at https://github.com/vanHeemstraSystems/learning-terraform
+
+Based on "Input Variables & Output Variables" at https://www.youtube.com/watch?v=geCHtDlrqNE&list=PLsOrrjBMkLaS-IdoViqBNHyj5slBujhQP&index=2
 
 ## 100 - Introduction
 
