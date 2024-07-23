@@ -49,6 +49,11 @@ $ terraform plan
 
 If values for input variables are not otherwise specified, terraform will wait for the manual input from the user.
 
+```
+$ var.location
+  Enter a value: westus
+```
+
 Watch me run terraform apply:
 
 ```
@@ -66,6 +71,11 @@ $ terraform apply
 Terraform is designed to run over and over again. If there's no change it won't do anything.
 
 Watch me run terraform apply after changing the value from ```West U.S``` to ```East US```:
+
+```
+$ var.location
+  Enter a value: eastus
+```
 
 ```
 $ terraform apply
