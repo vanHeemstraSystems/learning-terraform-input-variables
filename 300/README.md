@@ -4,57 +4,75 @@ TRANSCRIPT
 
 Transcript
 
-0:00
-watch me declare an input variable
-0:01
-inputs come in three primitive types
-0:04
-string pool or number and two collection
-0:06
-types list or map watch me declare an
-0:09
-output variable output variables let you
-0:11
-expose information generated within
-0:13
-terraform and pass it along to the next
-0:15
-step in your process watch me run
-0:17
-terraforming it
-0:20
-watch me run terraform plan it values
-0:23
-for input variables are not otherwise
-0:24
-specified terraform will wait for the
-0:27
-manual input from the user watch me run
-0:29
-terraform apply
-0:31
-the apply operation has the same
-0:33
-behavior
-0:36
-watch me run terraform apply again
-0:38
-terraform is designed to run over and
-0:40
-over again there's no change it won't do
-0:42
-anything watch me run terraform apply
-0:45
-after changing the value terraform will
-0:47
-detect changes in your solution and
-0:49
-propose tasks of either create destroy
-0:52
-or inline update notice how it's
-0:54
-changing the value from West U.S to East
-0:56
-US
-0:58
-that's it
+Watch me declare an input variable.
+
+```
+variable "location" {
+  type = string
+}
+```
+variables.tf
+
+Inputs come in three primitive types:
+
+- string, 
+- boolean, or 
+- number
+
+And two collection types: 
+
+- list, or 
+- map
+
+Watch me declare an output variable:
+
+```
+output "location" {
+  value = var.location
+}
+```
+outputs.tf
+
+```Output``` variables let you expose information generated within terraform and pass it along to the next step in your process.
+
+Watch me run terraform init:
+
+```
+$ terraform init
+```
+
+Watch me run terraform plan:
+
+```
+$ terraform plan
+```
+
+If values for input variables are not otherwise specified, terraform will wait for the manual input from the user.
+
+Watch me run terraform apply:
+
+```
+$ terraform apply
+```
+
+The ```apply``` operation has the same behavior.
+
+Watch me run terraform apply again:
+
+```
+$ terraform apply
+```
+
+Terraform is designed to run over and over again. If there's no change it won't do anything.
+
+Watch me run terraform apply after changing the value from ```West U.S``` to ```East US```:
+
+```
+$ terraform apply
+```
+
+Terraform will detect changes in your solution and propose tasks of either create, destroy, or inline update.
+
+Notice how it's changing the value from ```West U.S``` to ```East US```.
+
+That's it!
