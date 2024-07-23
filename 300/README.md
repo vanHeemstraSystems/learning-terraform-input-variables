@@ -1,9 +1,5 @@
 # 300 - Learning Our Subject
 
-TRANSCRIPT
-
-Transcript
-
 Watch me declare an input variable.
 
 ```
